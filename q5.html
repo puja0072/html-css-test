@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-rows: repeat(2,1fr) ;
+            grid-template-columns:repeat(2,1fr) ;
+            gap:10px;
+            
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://i.pinimg.com/474x/d8/da/f6/d8daf637f76476b43c17bf8b5f9edb35.jpg" alt="">
+        <img src="https://i.pinimg.com/474x/f0/12/d4/f012d413dc54b07980ed2843786d3277.jpg" alt="">
+        <img src="https://i.pinimg.com/474x/90/48/9f/90489fda05254bb2fef245248e9befb1.jpg" alt="">
+        <img src="https://i.pinimg.com/474x/b4/d8/13/b4d813b3dbbd5c8795f7b840b99db081.jpg" alt="">
+    </div>
+</body>
+</html>
